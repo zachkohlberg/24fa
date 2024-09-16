@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html" class="active"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Overview</a></li><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html" class="active"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="../clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="../draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -177,10 +177,10 @@
 <h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
 <ul>
 <li>Use the Eclipse IDE to write, compile, and run Java programs</li>
-<li>Write a basic “Hello World” program</li>
+<li>Write a basic &quot;Hello World&quot; program</li>
 <li>Write Java code to perform a simple dialog-based interaction</li>
 </ul>
-<h2 id="part-1-hello-eclipse"><a class="header" href="#part-1-hello-eclipse">Part 1 Hello Eclipse!</a></h2>
+<h2 id="task-0-start-eclipse"><a class="header" href="#task-0-start-eclipse">Task 0: Start Eclipse</a></h2>
 <p>The Eclipse Integrated Development Environment (IDE) is a powerful tool
 for editing, compiling, and running programs. It has many other
 functionalities, but we will focus on the basics today. Let’s get
@@ -220,24 +220,14 @@ Perspective/the workbench. Then we can write and run some programs.</p>
 <p>Apart from the Menu options/icons, the default workbench area is divided
 into 5 major views/sections (see above):</p>
 <ol>
-<li>
-<p>Package Explorer: This will show your project files (each folder at
-the top level typically represents a separate project)</p>
-</li>
-<li>
-<p>Editor: This is where you edit/write code</p>
-</li>
-<li>
-<p>Problems: This is where problems are reported. Also notice tabs for
-Javadoc, Declaration, Diagrams, etc. We will visit these later.</p>
-</li>
-<li>
-<p>Task List: TODO tasks listed here. You can close this. We will not
-need this for some time.</p>
-</li>
-<li>
-<p>Outline: This will show an outline of your code (to be used later).</p>
-</li>
+<li>Package Explorer: This will show your project files (each folder at
+the top level typically represents a separate project)</li>
+<li>Editor: This is where you edit/write code</li>
+<li>Problems: This is where problems are reported. Also notice tabs for
+Javadoc, Declaration, Diagrams, etc. We will visit these later.</li>
+<li>Task List: TODO tasks listed here. You can close this. We will not
+need this for some time.</li>
+<li>Outline: This will show an outline of your code (to be used later).</li>
 </ol>
 <p>For now, just focus on the Menu options, the Package Explorer, and the
 Editor panes. Note: If you accidentally close any of the windows and you
@@ -252,21 +242,21 @@ then select Java Project (see below):</p>
 you select the New Project option, you will get a pop up window (see
 above). This is a form to fill out some details about the kind of
 project you are creating.</p>
-<p>Enter the name for your project in the “Project name” field. We have
+<p>Enter the name for your project in the &quot;Project name&quot; field. We have
 chosen HelloWorld as you can see. Click Finish to accept the default
 settings and create the project, now named HelloWorld.</p>
 <p>You will notice that the HelloWorld project is now listed in the Project
 Explorer view. Click on the little triangle to expose the contents of
 the project as shown in the figure below. Eclipse created a folder
 called HelloWorld in your specified workspace folder. In it, it has
-placed another folder called src which is currently empty. “src” is
+placed another folder called src which is currently empty. &quot;src&quot; is
 short for source code, and this is where the code for your program needs
 to go.</p>
 <p><img src="images/06_src.jpg" alt="image" /></p>
 <p><img src="images/07_new_class.jpg" alt="image" /></p>
 <p>To write some Java code, we need to create a Java class (we will learn
 about classes later). Select the File Menu again, followed by New, and
-this time select “Class” (see above). Another form window will pop up as
+this time select &quot;Class&quot; (see above). Another form window will pop up as
 shown in Figure 7.</p>
 <p>Enter the name of the class (HelloWorld) in the Name field of the form.
 The class name does not need to be the same as the project name; we just
@@ -332,12 +322,12 @@ public class GreetingDialog {
 <p>When you’ve finished with an assignment and want to submit your work,
 you’ll need to find the .java files you wrote in Eclipse. These are
 located in your workspace folder. You can check your workspace’s
-location by clicking “File”, “Switch Workspace”, “Other ...”.</p>
+location by clicking &quot;File&quot;, &quot;Switch Workspace&quot;, &quot;Other ...&quot;.</p>
 <p>Each project has its own folder in your workspace, and you’ll find your
-source code in the “src” folder (as discussed earlier) within the
+source code in the &quot;src&quot; folder (as discussed earlier) within the
 project folder. Make sure you’re submitting the <strong>.java</strong> files, not the
 .class files. The folders in src should all be .java files, but if you
-accidentally look in the “bin” folder, you’ll see .class files with the
+accidentally look in the &quot;bin&quot; folder, you’ll see .class files with the
 same names as your classes. The .class files are compiled code, and for
 the most part they’re not human-readable. If you send me those instead
 of your .java files, I won’t be able to read or (in many cases) run your
@@ -353,6 +343,9 @@ receive feedback within a week of the deadline.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
                             <a rel="next prefetch" href="../wheels_intro/lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
@@ -364,6 +357,9 @@ receive feedback within a week of the deadline.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
                     <a rel="next prefetch" href="../wheels_intro/lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>

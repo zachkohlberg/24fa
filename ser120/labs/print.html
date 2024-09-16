@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Overview</a></li><li class="chapter-item expanded "><a href="eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -174,14 +174,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lab-1-introduction-to-java--eclipse"><a class="header" href="#lab-1-introduction-to-java--eclipse">Lab 1: Introduction to Java &amp; Eclipse</a></h1>
+                        <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>This site contains all assignments for SER120L. Starter code will be posted
+separately on Blackboard.</p>
+<p>These lab assignments are meant to help you practice what you learn in SER120.
+It's important to keep up with the lab practice so that you're prepared for
+activities in the SER120 lecture, so make sure you complete and submit each lab
+before the deadline listed on Blackboard.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-1-introduction-to-java--eclipse"><a class="header" href="#lab-1-introduction-to-java--eclipse">Lab 1: Introduction to Java &amp; Eclipse</a></h1>
 <h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
 <ul>
 <li>Use the Eclipse IDE to write, compile, and run Java programs</li>
-<li>Write a basic “Hello World” program</li>
+<li>Write a basic &quot;Hello World&quot; program</li>
 <li>Write Java code to perform a simple dialog-based interaction</li>
 </ul>
-<h2 id="part-1-hello-eclipse"><a class="header" href="#part-1-hello-eclipse">Part 1 Hello Eclipse!</a></h2>
+<h2 id="task-0-start-eclipse"><a class="header" href="#task-0-start-eclipse">Task 0: Start Eclipse</a></h2>
 <p>The Eclipse Integrated Development Environment (IDE) is a powerful tool
 for editing, compiling, and running programs. It has many other
 functionalities, but we will focus on the basics today. Let’s get
@@ -221,24 +228,14 @@ Perspective/the workbench. Then we can write and run some programs.</p>
 <p>Apart from the Menu options/icons, the default workbench area is divided
 into 5 major views/sections (see above):</p>
 <ol>
-<li>
-<p>Package Explorer: This will show your project files (each folder at
-the top level typically represents a separate project)</p>
-</li>
-<li>
-<p>Editor: This is where you edit/write code</p>
-</li>
-<li>
-<p>Problems: This is where problems are reported. Also notice tabs for
-Javadoc, Declaration, Diagrams, etc. We will visit these later.</p>
-</li>
-<li>
-<p>Task List: TODO tasks listed here. You can close this. We will not
-need this for some time.</p>
-</li>
-<li>
-<p>Outline: This will show an outline of your code (to be used later).</p>
-</li>
+<li>Package Explorer: This will show your project files (each folder at
+the top level typically represents a separate project)</li>
+<li>Editor: This is where you edit/write code</li>
+<li>Problems: This is where problems are reported. Also notice tabs for
+Javadoc, Declaration, Diagrams, etc. We will visit these later.</li>
+<li>Task List: TODO tasks listed here. You can close this. We will not
+need this for some time.</li>
+<li>Outline: This will show an outline of your code (to be used later).</li>
 </ol>
 <p>For now, just focus on the Menu options, the Package Explorer, and the
 Editor panes. Note: If you accidentally close any of the windows and you
@@ -253,21 +250,21 @@ then select Java Project (see below):</p>
 you select the New Project option, you will get a pop up window (see
 above). This is a form to fill out some details about the kind of
 project you are creating.</p>
-<p>Enter the name for your project in the “Project name” field. We have
+<p>Enter the name for your project in the &quot;Project name&quot; field. We have
 chosen HelloWorld as you can see. Click Finish to accept the default
 settings and create the project, now named HelloWorld.</p>
 <p>You will notice that the HelloWorld project is now listed in the Project
 Explorer view. Click on the little triangle to expose the contents of
 the project as shown in the figure below. Eclipse created a folder
 called HelloWorld in your specified workspace folder. In it, it has
-placed another folder called src which is currently empty. “src” is
+placed another folder called src which is currently empty. &quot;src&quot; is
 short for source code, and this is where the code for your program needs
 to go.</p>
 <p><img src="eclipse_intro/images/06_src.jpg" alt="image" /></p>
 <p><img src="eclipse_intro/images/07_new_class.jpg" alt="image" /></p>
 <p>To write some Java code, we need to create a Java class (we will learn
 about classes later). Select the File Menu again, followed by New, and
-this time select “Class” (see above). Another form window will pop up as
+this time select &quot;Class&quot; (see above). Another form window will pop up as
 shown in Figure 7.</p>
 <p>Enter the name of the class (HelloWorld) in the Name field of the form.
 The class name does not need to be the same as the project name; we just
@@ -333,12 +330,12 @@ public class GreetingDialog {
 <p>When you’ve finished with an assignment and want to submit your work,
 you’ll need to find the .java files you wrote in Eclipse. These are
 located in your workspace folder. You can check your workspace’s
-location by clicking “File”, “Switch Workspace”, “Other ...”.</p>
+location by clicking &quot;File&quot;, &quot;Switch Workspace&quot;, &quot;Other ...&quot;.</p>
 <p>Each project has its own folder in your workspace, and you’ll find your
-source code in the “src” folder (as discussed earlier) within the
+source code in the &quot;src&quot; folder (as discussed earlier) within the
 project folder. Make sure you’re submitting the <strong>.java</strong> files, not the
 .class files. The folders in src should all be .java files, but if you
-accidentally look in the “bin” folder, you’ll see .class files with the
+accidentally look in the &quot;bin&quot; folder, you’ll see .class files with the
 same names as your classes. The .class files are compiled code, and for
 the most part they’re not human-readable. If you send me those instead
 of your .java files, I won’t be able to read or (in many cases) run your
@@ -365,7 +362,7 @@ Materials) and save it in your course folder. This is a Java library
 of graphical shapes that will be used during the semester to build
 graphical applications.</li>
 </ol>
-<h2 id="task-1-creating-and-running-a-java-graphical-application-using-wheels"><a class="header" href="#task-1-creating-and-running-a-java-graphical-application-using-wheels">Task 1: Creating and running a Java graphical application using Wheels</a></h2>
+<h2 id="task-1-create-and-run-a-java-graphical-application-using-wheels"><a class="header" href="#task-1-create-and-run-a-java-graphical-application-using-wheels">Task 1: Create and run a Java graphical application using Wheels</a></h2>
 <ol>
 <li>
 <p>Add the wheels library to the FirstWheelsApp project, so that
@@ -431,7 +428,7 @@ application using the wheels library.</li>
 </ol>
 </li>
 </ol>
-<h2 id="task-2-adding-more-code-to-the-graphical-app"><a class="header" href="#task-2-adding-more-code-to-the-graphical-app">Task 2: Adding more code to the graphical app</a></h2>
+<h2 id="task-2-add-more-code-to-the-graphical-app"><a class="header" href="#task-2-add-more-code-to-the-graphical-app">Task 2: Add more code to the graphical app</a></h2>
 <ol>
 <li>
 <p>Declare a variable that will refer to a bubble object right after
@@ -473,6 +470,13 @@ Blackboard in a single submission. Make sure you have completed each task before
 submitting the assignment.</p>
 <p>I will review all lab assignments after the deadline. You should usually
 receive feedback within a week of the deadline.</p>
+<p>Your submission must include:</p>
+<ul>
+<li><code>FirstApp.java</code></li>
+<li><code>FirstAppWithRectangle.java</code></li>
+<li><code>FirstAppWithRoundedRectangle.java</code></li>
+<li><code>FirstAppWithLine.java</code></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lab-3-worm"><a class="header" href="#lab-3-worm">Lab 3: Worm</a></h1>
 <h2 id="objectives-2"><a class="header" href="#objectives-2">Objectives</a></h2>
 <ul>
@@ -548,6 +552,157 @@ Blackboard in a single submission. Make sure you have completed each task before
 submitting the assignment.</p>
 <p>I will review all lab assignments after the deadline. You should usually
 receive feedback within a week of the deadline.</p>
+<p>Your submission must include:</p>
+<ul>
+<li><code>MyApp.java</code></li>
+<li><code>Worm.java</code></li>
+<li><code>Body.java</code></li>
+<li><code>Head.java</code></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-4-clickable-worm"><a class="header" href="#lab-4-clickable-worm">Lab 4: Clickable Worm</a></h1>
+<h2 id="objectives-3"><a class="header" href="#objectives-3">Objectives</a></h2>
+<ul>
+<li>Implement an event handler method</li>
+<li>Implement a subclass of the Ellipse class</li>
+<li>Replace instances of the Ellipse class with a subclass</li>
+</ul>
+<h2 id="lab-setup-2"><a class="header" href="#lab-setup-2">Lab Setup</a></h2>
+<ol>
+<li>Create a new project and add the wheels library to its build path.</li>
+<li>Now create a subclass of the Ellipse class named ClickableEllipse,
+which will implement the mouseClicked method.</li>
+<li>Create a parameterized constructor for ClickableEllipse that accepts
+two colors and saves them in two instance variables.</li>
+</ol>
+<h2 id="task-1-change-color-of-clickableellipse"><a class="header" href="#task-1-change-color-of-clickableellipse">Task 1: Change Color of ClickableEllipse</a></h2>
+<ol>
+<li>Implement the mouseClicked method such that the Ellipse alternates
+between the two colors, changing color with each mouse click.</li>
+<li>Create a ClickableEllipseApp class that displays an instance of
+ClickableEllipse and run the code to test it.</li>
+<li>Once you verify that the ClickableEllipse works, you can delete your
+ClickableEllipseApp class. It will stop working when you finish the
+other tasks, so you don’t need to submit it with the rest of the
+program.</li>
+</ol>
+<h2 id="task-2-add-clickableellipse-to-the-worm"><a class="header" href="#task-2-add-clickableellipse-to-the-worm">Task 2: Add ClickableEllipse to the Worm</a></h2>
+<ol>
+<li>Download the starter code from Blackboard and add it to your
+project, or copy over the code from your previous Worm project. <strong>If
+you are using your code from the previous lab, make sure you
+completed all of the required work from that lab</strong>. You should still download the starter
+code for this lab and look at the changes made to the Worm’s
+components.</li>
+<li>Replace all Ellipse instances in the Body class with your
+ClickableEllipse.</li>
+<li>Test your program.</li>
+</ol>
+<h2 id="task-3-click-to-recolor-the-entire-body"><a class="header" href="#task-3-click-to-recolor-the-entire-body">Task 3: Click to Recolor the Entire Body</a></h2>
+<ol>
+<li>In order to recolor the entire body when one segment is clicked, each
+segment needs to be aware of the body. This will require you to add a Body
+instance variable (named <code>_body</code>) to the ClickbableEllipse class and a
+Body parameter (named <code>body</code>) to the ClickableEllipse's constructor. You
+will also have to modify the ClickbableEllipse and Body constructors.</li>
+<li>Modify the code such that the <code>_body.setColor()</code> is called in the
+<code>mouseClicked()</code> method of the ClickableEllipse class to cause all body
+segments to change color when the mouse is clicked.</li>
+</ol>
+<h2 id="task-4-recolor-the-entire-worm"><a class="header" href="#task-4-recolor-the-entire-worm">Task 4: Recolor the Entire Worm</a></h2>
+<ol>
+<li>Further modify your code so that clicking the body or face causes
+whe entire Worm to change colors. The eyes should remain a different
+color from the face and don’t have to be clickable, but otherwise
+how the color change works is up to you (toggle between two or more
+colors, switch between different patterns, etc.). You should make
+the ClickableEllipse aware of the Worm instead of the Body, replace
+the ellipses in the head, and add a setColor method to both the Head
+and Worm in addition to the Body.</li>
+</ol>
+<h1 id="review--submission-3"><a class="header" href="#review--submission-3">Review &amp; Submission</a></h1>
+<p>When you have completed the lab, please upload all Java source code to
+Blackboard in a single submission. Make sure you have completed each task before
+submitting the assignment.</p>
+<p>I will review all lab assignments after the deadline. You should usually
+receive feedback within a week of the deadline.</p>
+<p>Your submission must include:</p>
+<ul>
+<li><code>MyApp.java</code></li>
+<li><code>Worm.java</code></li>
+<li><code>Body.java</code></li>
+<li><code>Head.java</code></li>
+<li><code>ClickableEllipse.java</code></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-5-draggable-worm"><a class="header" href="#lab-5-draggable-worm">Lab 5: Draggable Worm</a></h1>
+<h2 id="objectives-4"><a class="header" href="#objectives-4">Objectives</a></h2>
+<ul>
+<li>Implement an interface</li>
+<li>Create a draggable UI element</li>
+</ul>
+<h2 id="lab-setup-3"><a class="header" href="#lab-setup-3">Lab Setup</a></h2>
+<ol>
+<li>Download the starter code and run the MyEllipseApp program. Try to
+drag the ellipse displayed in the app.</li>
+<li>Change the implementation of the DraggableEllipse such that it drags
+smoothly (i.e. the ellipse doesn’t jump at the beginning of the
+dragging motion).</li>
+<li>Run the program again and test your changes.</li>
+</ol>
+<h2 id="task-1-make-the-body-draggable"><a class="header" href="#task-1-make-the-body-draggable">Task 1: Make the Body Draggable</a></h2>
+<ol>
+<li>Currently, you can drag any of the individual worm segments on their
+own. We want to be able to drag the entire Worm at once. You can try
+to make this change all at once, but it will help to start with just
+the body.</li>
+<li>Modify your DraggableEllipse class so that it knows about the body.</li>
+<li>Modify your DraggableEllipse’s mouseDragged method so that it calls
+the body’s move method rather than its own move method.</li>
+<li>Test your changes and make sure that the Worm’s entire body can be
+dragged at once.</li>
+</ol>
+<h2 id="task-2-make-the-worm-draggable"><a class="header" href="#task-2-make-the-worm-draggable">Task 2: Make the Worm Draggable</a></h2>
+<ol>
+<li>Change the DraggableEllipse again, so that it knows about the worm
+instead of the body. Don’t forget to remove any references to the
+body and replace them with references to the worm. Instead of
+calling the body’s move method, call the worm’s move method.</li>
+<li>Change your Worm and Body code to make sure that the Worm reference
+is passed through the Body constructor to the DraggableEllipses.</li>
+<li>Test your program: dragging any body segment should now drag the
+entire Worm!</li>
+<li>Now you just need to make similar changes to the Head class so that
+dragging the head also drags the entire worm.</li>
+</ol>
+<h2 id="task-3-use-the-draggable-interface"><a class="header" href="#task-3-use-the-draggable-interface">Task 3: Use the Draggable Interface</a></h2>
+<ol>
+<li>If you haven’t already, make sure that the DraggableEllipse, Head,
+Body, and Worm classes each implement the Movable interface. This
+means they must also implement their own move method.</li>
+<li>Modify the DraggableEllipse class so that instead of a reference to
+the Body or Worm, it has a reference to a Movable. This Movable
+object could be anything that implements the Movable interface: the
+Head, Body, Worm, or even another DraggableEllipse.</li>
+<li>To test this change out, make the Worm’s eyes only drag the head,
+while everything else drags the entire worm. You hardly have to
+change any code for this to happen: just give the eyes the head
+(&quot;this&quot;) instead of the Worm. Note that the head will snap back
+into place if you drag any other part of the worm.</li>
+</ol>
+<h2 id="review--submission-4"><a class="header" href="#review--submission-4">Review &amp; Submission</a></h2>
+<p>When you have completed the lab, please upload all Java source code to
+Blackboard in a single submission. Make sure you have completed each task before
+submitting the assignment.</p>
+<p>I will review all lab assignments after the deadline. You should usually
+receive feedback within a week of the deadline.</p>
+<p>Your submission must include:</p>
+<ul>
+<li><code>MyApp.java</code></li>
+<li><code>Worm.java</code></li>
+<li><code>Body.java</code></li>
+<li><code>Head.java</code></li>
+<li><code>Movable.java</code></li>
+<li><code>DraggableEllipse.java</code></li>
+</ul>
 
                     </main>
 
