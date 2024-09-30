@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Wheels Intro - SER120 Labs</title>
+        <title>UML - SER120 Labs</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Overview</a></li><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html" class="active"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="../clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="../draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li><li class="chapter-item expanded "><a href="../backwards_compatibility/lab.html"><strong aria-hidden="true">6.</strong> Backwards Compatibility</a></li><li class="chapter-item expanded "><a href="../uml/lab.html"><strong aria-hidden="true">7.</strong> UML</a></li><li class="chapter-item expanded "><a href="../sketch_app/lab.html"><strong aria-hidden="true">8.</strong> Sketch App</a></li><li class="chapter-item expanded "><a href="../swing_shapes/lab.html"><strong aria-hidden="true">9.</strong> Swing Shapes</a></li><li class="chapter-item expanded "><a href="../animation_timer/lab.html"><strong aria-hidden="true">10.</strong> Animation Timer</a></li><li class="chapter-item expanded "><a href="../buttons/lab.html"><strong aria-hidden="true">11.</strong> Buttons</a></li><li class="chapter-item expanded "><a href="../moving_shapes/lab.html"><strong aria-hidden="true">12.</strong> Moving Shapes</a></li><li class="chapter-item expanded "><a href="../flowers/lab.html"><strong aria-hidden="true">13.</strong> Flowers</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Overview</a></li><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="../clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="../draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li><li class="chapter-item expanded "><a href="../backwards_compatibility/lab.html"><strong aria-hidden="true">6.</strong> Backwards Compatibility</a></li><li class="chapter-item expanded "><a href="../uml/lab.html" class="active"><strong aria-hidden="true">7.</strong> UML</a></li><li class="chapter-item expanded "><a href="../sketch_app/lab.html"><strong aria-hidden="true">8.</strong> Sketch App</a></li><li class="chapter-item expanded "><a href="../swing_shapes/lab.html"><strong aria-hidden="true">9.</strong> Swing Shapes</a></li><li class="chapter-item expanded "><a href="../animation_timer/lab.html"><strong aria-hidden="true">10.</strong> Animation Timer</a></li><li class="chapter-item expanded "><a href="../buttons/lab.html"><strong aria-hidden="true">11.</strong> Buttons</a></li><li class="chapter-item expanded "><a href="../moving_shapes/lab.html"><strong aria-hidden="true">12.</strong> Moving Shapes</a></li><li class="chapter-item expanded "><a href="../flowers/lab.html"><strong aria-hidden="true">13.</strong> Flowers</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,124 +173,72 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lab-2-introduction-to-the-wheels-package"><a class="header" href="#lab-2-introduction-to-the-wheels-package">Lab 2: Introduction to the Wheels Package</a></h1>
+                        <h1 id="lab-7-uml-class-diagrams"><a class="header" href="#lab-7-uml-class-diagrams">Lab 7: UML Class Diagrams</a></h1>
 <h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
 <ul>
-<li>Set up an Eclipse project that uses the Wheels Java graphical
-library</li>
-<li>Write programs using basic shapes defined in the Wheels library</li>
+<li>Use a UML editor to produce a UML class diagram</li>
 </ul>
 <h2 id="lab-setup"><a class="header" href="#lab-setup">Lab Setup</a></h2>
 <ol>
-<li>Create a new Java project in Eclipse (consult the previous lab in
-case you have forgotten how). Call it &quot;FirstWheelsApp&quot;.</li>
-<li>Download the wheels.zip file from Blackboard (under Course
-Materials) and save it in your course folder. This is a Java library
-of graphical shapes that will be used during the semester to build
-graphical applications.</li>
+<li>For this assignment you will be creating a UML diagram like the one
+shown in the UML guide. In order to do this, we recommend
+using the Violet UML editor. Violet has a very simple interface, and
+makes it easy to create diagrams like the UMLGuide example. You
+can download Violet at the following URL:
+<a href="https://sourceforge.net/projects/violet/files/violetumleditor/3.0.0/">https://sourceforge.net/projects/violet/files/violetumleditor/3.0.0/</a>.
+Download the .jar file, which you should be able to run by
+double-clicking as long as Java is installed on your computer. If it
+warns you about needing Java 1.6, you probably downloaded the .exe
+file instead of the .jar file.</li>
+<li>One alternative to Violet is draw.io, a web application similar to
+Google Docs. You can access it at <a href="https://www.draw.io">https://www.draw.io</a>. Be warned
+that using draw.io instead of Violet will likely require a little
+more work to follow the formatting conventions required in this
+assignment.</li>
 </ol>
-<h2 id="task-1-create-and-run-a-java-graphical-application-using-wheels"><a class="header" href="#task-1-create-and-run-a-java-graphical-application-using-wheels">Task 1: Create and run a Java graphical application using Wheels</a></h2>
-<ol>
-<li>
-<p>Add the wheels library to the FirstWheelsApp project, so that
-Eclipse can use it when you write code in that project</p>
-<ol>
-<li>In the Package Explorer view in Eclipse, right click on the
-FirstWheelsApp project and select &quot;Build Path&quot; -&gt; &quot;Add External
-Archives&quot;.</li>
-<li>Then navigate to the wheels.zip file that you downloaded from
-Blackboard, select it, and click &quot;Open&quot;. (Depending on your
-version of Eclipse, you may get slightly different views after
-you select &quot;Build Path&quot; -&gt; &quot;Add External Archives&quot; in the previous
-step. If that is the case, select &quot;Add External Jars&quot; and then
-navigate to the wheels.zip file).</li>
-</ol>
-</li>
-<li>
-<p>Create a new Java class in the FirstWheelsApp project.</p>
-<ol>
-<li>Right click on the FirstWheelsApp project in the Package
-Explorer view and select &quot;New&quot; -&gt; &quot;Class&quot;.</li>
-<li>Call this class FirstApp.</li>
-</ol>
-</li>
-<li>
-<p>Edit the FirstApp class.</p>
-<ol>
-<li>Double-click on the FirstApp class in the PackageExplorer view
-to open the Java editor (it might already open by default as
-soon as you create the class).</li>
-<li>Replace the code in the FirstApp class with the following code.</li>
-</ol>
-<pre><code class="language-java">public class FirstApp extends wheels.users.Frame
-{
-    // instance variable declaration
-    private wheels.users.Ellipse _ellipse;
+<h2 id="uml-guide"><a class="header" href="#uml-guide">UML Guide</a></h2>
+<p><img src="images/UMLGuide.png" alt="image" /></p>
+<h2 id="task-1-create-a-uml-class-diagram"><a class="header" href="#task-1-create-a-uml-class-diagram">Task 1: Create a UML Class Diagram</a></h2>
+<p>Create a UML diagram for the Java classes shown below. Your diagram
+should reflect these relationships exactly as described by the Java
+code while following the conventions shown in the attached UML
+Guide.</p>
+<p>When finished, export your UML diagram as a PDF or PNG file.</p>
+<pre><code class="language-java">public abstract class Vehicle {
+    private String _manufacturer;
+    public abstract void move();
+    public String getManufacturer() {...}
+}
 
-    // constructor definition
-    public FirstApp()
-    {
-        // create an instance of an Ellipse
-        _ellipse = new wheels.users.Ellipse();
-    }
+public class Car extends Vehicle {
+    protected java.awt.Color _color;
+}
 
-    // This is the main method, which specifies the code that
-    // will be first executed when the FirstApp program is run.
-    public static void main(String[] argv)
-    {
-        FirstApp myApp = new FirstApp();
-    }
+public class SportsCar extends Car implements NoiseMaker {
+    public void move() {...}
+    public void makeNoise() {...}
+}
+
+public class Bus extends Vehicle {
+    private int _numberOfPassengers;
+    public void move() {...}
+}
+
+public class RaceTrack {
+    private Car _car1, _car2;
+    public RaceTrack(Car car1, Car car2) {...}
+    public Car startRace() {...}
+}
+
+public class TrafficCop implements NoiseMaker {
+    public void writeTicket(Vehicle v) {...}
+    public void makeNoise() {...}
+}
+
+public interface NoiseMaker {
+    void makeNoise();
 }
 </code></pre>
-</li>
-<li>
-<p>Run the FirstApp</p>
-<ol>
-<li>Right click on the FirstApp class and select &quot;Run As&quot; -&gt; &quot;Java
-Application&quot;.</li>
-<li>A new window containing an ellipse (in this case a circle)
-should pop up.</li>
-<li>Congrats! You have successfully run your first Java graphics
-application using the wheels library.</li>
-</ol>
-</li>
-</ol>
-<h2 id="task-2-add-more-code-to-the-graphical-app"><a class="header" href="#task-2-add-more-code-to-the-graphical-app">Task 2: Add more code to the graphical app</a></h2>
-<ol>
-<li>
-<p>Declare a variable that will refer to a bubble object right after
-the variable referring to an ellipse object is declared in the
-instance variables section of the FirstApp class:</p>
-<pre><code class="language-java">private wheels.users.Ellipse _ellipse;
-private wheels.users.ConversationBubble _bubble;
-</code></pre>
-</li>
-<li>
-<p>After the line that creates a new ellipse object</p>
-<pre><code class="language-java">_ellipse = new wheels.users.Ellipse();
-</code></pre>
-<p>add a new line to create a new conversation bubble object to make
-the application a bit more exciting</p>
-<pre><code class="language-java">_bubble = new wheels.users.ConversationBubble(&quot;I am a red bubble&quot;);
-</code></pre>
-</li>
-<li>
-<p>Run the FirstApp application to see the result</p>
-</li>
-</ol>
-<h2 id="task-3-exploring-the-wheels-library"><a class="header" href="#task-3-exploring-the-wheels-library">Task 3: Exploring the Wheels library</a></h2>
-<ol>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithRectangle) that displays a
-rectangle inside a Frame using the wheels’ Rectangle class.</li>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithRoundedRectangle) that
-displays a rectangle with rounded corners using the Wheels’
-RoundedRectangle class.</li>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithLine) that displays a line
-using the Wheels Line class.</li>
-</ol>
 <h2 id="review--submission"><a class="header" href="#review--submission">Review &amp; Submission</a></h2>
 <p>When you have completed the lab, please upload all Java source code and any
 other documents (such as diagrams or answers to questions) to
@@ -300,21 +248,18 @@ submitting the assignment.</p>
 receive feedback within a week of the deadline.</p>
 <p>Your submission must include:</p>
 <ul>
-<li><code>FirstApp.java</code></li>
-<li><code>FirstAppWithRectangle.java</code></li>
-<li><code>FirstAppWithRoundedRectangle.java</code></li>
-<li><code>FirstAppWithLine.java</code></li>
+<li>Your UML diagram as a png or pdf file</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../eclipse_intro/lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../backwards_compatibility/lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../worm/lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../sketch_app/lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -324,11 +269,11 @@ receive feedback within a week of the deadline.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../eclipse_intro/lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../backwards_compatibility/lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../worm/lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../sketch_app/lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

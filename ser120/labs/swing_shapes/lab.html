@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Wheels Intro - SER120 Labs</title>
+        <title>Swing Shapes - SER120 Labs</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Overview</a></li><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html" class="active"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="../clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="../draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li><li class="chapter-item expanded "><a href="../backwards_compatibility/lab.html"><strong aria-hidden="true">6.</strong> Backwards Compatibility</a></li><li class="chapter-item expanded "><a href="../uml/lab.html"><strong aria-hidden="true">7.</strong> UML</a></li><li class="chapter-item expanded "><a href="../sketch_app/lab.html"><strong aria-hidden="true">8.</strong> Sketch App</a></li><li class="chapter-item expanded "><a href="../swing_shapes/lab.html"><strong aria-hidden="true">9.</strong> Swing Shapes</a></li><li class="chapter-item expanded "><a href="../animation_timer/lab.html"><strong aria-hidden="true">10.</strong> Animation Timer</a></li><li class="chapter-item expanded "><a href="../buttons/lab.html"><strong aria-hidden="true">11.</strong> Buttons</a></li><li class="chapter-item expanded "><a href="../moving_shapes/lab.html"><strong aria-hidden="true">12.</strong> Moving Shapes</a></li><li class="chapter-item expanded "><a href="../flowers/lab.html"><strong aria-hidden="true">13.</strong> Flowers</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Overview</a></li><li class="chapter-item expanded "><a href="../eclipse_intro/lab.html"><strong aria-hidden="true">1.</strong> Eclipse Intro</a></li><li class="chapter-item expanded "><a href="../wheels_intro/lab.html"><strong aria-hidden="true">2.</strong> Wheels Intro</a></li><li class="chapter-item expanded "><a href="../worm/lab.html"><strong aria-hidden="true">3.</strong> Worm</a></li><li class="chapter-item expanded "><a href="../clickable_worm/lab.html"><strong aria-hidden="true">4.</strong> Clickable Worm</a></li><li class="chapter-item expanded "><a href="../draggable_worm/lab.html"><strong aria-hidden="true">5.</strong> Draggable Worm</a></li><li class="chapter-item expanded "><a href="../backwards_compatibility/lab.html"><strong aria-hidden="true">6.</strong> Backwards Compatibility</a></li><li class="chapter-item expanded "><a href="../uml/lab.html"><strong aria-hidden="true">7.</strong> UML</a></li><li class="chapter-item expanded "><a href="../sketch_app/lab.html"><strong aria-hidden="true">8.</strong> Sketch App</a></li><li class="chapter-item expanded "><a href="../swing_shapes/lab.html" class="active"><strong aria-hidden="true">9.</strong> Swing Shapes</a></li><li class="chapter-item expanded "><a href="../animation_timer/lab.html"><strong aria-hidden="true">10.</strong> Animation Timer</a></li><li class="chapter-item expanded "><a href="../buttons/lab.html"><strong aria-hidden="true">11.</strong> Buttons</a></li><li class="chapter-item expanded "><a href="../moving_shapes/lab.html"><strong aria-hidden="true">12.</strong> Moving Shapes</a></li><li class="chapter-item expanded "><a href="../flowers/lab.html"><strong aria-hidden="true">13.</strong> Flowers</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,124 +173,67 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lab-2-introduction-to-the-wheels-package"><a class="header" href="#lab-2-introduction-to-the-wheels-package">Lab 2: Introduction to the Wheels Package</a></h1>
+                        <h1 id="lab-9-swing-shapes"><a class="header" href="#lab-9-swing-shapes">Lab 9: Swing Shapes</a></h1>
 <h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
 <ul>
-<li>Set up an Eclipse project that uses the Wheels Java graphical
-library</li>
-<li>Write programs using basic shapes defined in the Wheels library</li>
+<li>Create a graphical application with Java’s Swing library</li>
+<li>Display basic shapes using Swing</li>
 </ul>
 <h2 id="lab-setup"><a class="header" href="#lab-setup">Lab Setup</a></h2>
 <ol>
-<li>Create a new Java project in Eclipse (consult the previous lab in
-case you have forgotten how). Call it &quot;FirstWheelsApp&quot;.</li>
-<li>Download the wheels.zip file from Blackboard (under Course
-Materials) and save it in your course folder. This is a Java library
-of graphical shapes that will be used during the semester to build
-graphical applications.</li>
+<li>Download the starter code from Blackboard and add it to a new
+Eclipse project. The starter code contains the following classes:
+App, DrawingPanel, and SmartShape. The App class extends JFrame, and
+the DrawingPanel class extends JPanel.</li>
+<li>From this point on we’ll be using Swing instead of wheels, so you no
+longer need to add wheels to your build path or extend any wheels
+classes.</li>
 </ol>
-<h2 id="task-1-create-and-run-a-java-graphical-application-using-wheels"><a class="header" href="#task-1-create-and-run-a-java-graphical-application-using-wheels">Task 1: Create and run a Java graphical application using Wheels</a></h2>
+<h2 id="task-1-set-line-thickness"><a class="header" href="#task-1-set-line-thickness">Task 1: Set Line Thickness</a></h2>
+<p>In wheels, we could easily get and set the line thickness of a
+shape’s outline. Implement this feature in the SmartShape class:</p>
 <ol>
-<li>
-<p>Add the wheels library to the FirstWheelsApp project, so that
-Eclipse can use it when you write code in that project</p>
+<li>Add a thickness integer instance variable to the SmartShape
+class and write accessor/mutator methods for it.</li>
+<li>To draw a shape with the given frame’s thickness, every time the
+Graphics2D paintbrush is used to draw that shape, we need to set
+the stroke of the paintbrush to the value of the thickness:</li>
+<li>Create a new instance of java.awt.BasicStroke and pass
+thickness as a parameter when calling the constructor.</li>
+<li>Call the setStroke(...) method on the Graphics2D paintbrush
+and pass the BasicStroke you just created as a parameter.</li>
+<li>Call the setThickness method of rectangle in the DrawingPanel
+constructor. Change the thickness to make sure your new feature
+works.</li>
+</ol>
+<h2 id="task-2-different-shapes"><a class="header" href="#task-2-different-shapes">Task 2: Different Shapes</a></h2>
+<p>Try using the SmartShape class to display several different shapes:
+a rectangle, rounded rectangle, and an ellipse. Display an instance
+of each in the DrawingPanel to make sure they create the right
+shape.</p>
+<h2 id="task-3-composite-object"><a class="header" href="#task-3-composite-object">Task 3: Composite Object</a></h2>
 <ol>
-<li>In the Package Explorer view in Eclipse, right click on the
-FirstWheelsApp project and select &quot;Build Path&quot; -&gt; &quot;Add External
-Archives&quot;.</li>
-<li>Then navigate to the wheels.zip file that you downloaded from
-Blackboard, select it, and click &quot;Open&quot;. (Depending on your
-version of Eclipse, you may get slightly different views after
-you select &quot;Build Path&quot; -&gt; &quot;Add External Archives&quot; in the previous
-step. If that is the case, select &quot;Add External Jars&quot; and then
-navigate to the wheels.zip file).</li>
+<li>When you were working with wheels, you created several different
+objects composed of multiple wheels shapes (such as the worm from
+lab 3).</li>
+<li>Design your own object that can be represented with a few simple
+shapes. You may find it helpful to sketch a picture and note the
+sizes of each shape and its offset from an origin point (see the
+tree demo from lab 3). You make whatever type of object you want as
+long as it’s not something we’ve already made in a previous activity
+or example.</li>
+<li>Write a class for your object and give it the necessary SmartShape
+components to display itself in your application. Your class should
+have a draw method that takes a Graphics or Graphics2D and uses it
+to draw each of its component shapes.</li>
+<li>In your DrawingPanel class, make an instance of your new class and
+call its draw method in paintComponent. Make sure your object is
+displayed next to your other shapes.</li>
 </ol>
-</li>
-<li>
-<p>Create a new Java class in the FirstWheelsApp project.</p>
-<ol>
-<li>Right click on the FirstWheelsApp project in the Package
-Explorer view and select &quot;New&quot; -&gt; &quot;Class&quot;.</li>
-<li>Call this class FirstApp.</li>
-</ol>
-</li>
-<li>
-<p>Edit the FirstApp class.</p>
-<ol>
-<li>Double-click on the FirstApp class in the PackageExplorer view
-to open the Java editor (it might already open by default as
-soon as you create the class).</li>
-<li>Replace the code in the FirstApp class with the following code.</li>
-</ol>
-<pre><code class="language-java">public class FirstApp extends wheels.users.Frame
-{
-    // instance variable declaration
-    private wheels.users.Ellipse _ellipse;
-
-    // constructor definition
-    public FirstApp()
-    {
-        // create an instance of an Ellipse
-        _ellipse = new wheels.users.Ellipse();
-    }
-
-    // This is the main method, which specifies the code that
-    // will be first executed when the FirstApp program is run.
-    public static void main(String[] argv)
-    {
-        FirstApp myApp = new FirstApp();
-    }
-}
-</code></pre>
-</li>
-<li>
-<p>Run the FirstApp</p>
-<ol>
-<li>Right click on the FirstApp class and select &quot;Run As&quot; -&gt; &quot;Java
-Application&quot;.</li>
-<li>A new window containing an ellipse (in this case a circle)
-should pop up.</li>
-<li>Congrats! You have successfully run your first Java graphics
-application using the wheels library.</li>
-</ol>
-</li>
-</ol>
-<h2 id="task-2-add-more-code-to-the-graphical-app"><a class="header" href="#task-2-add-more-code-to-the-graphical-app">Task 2: Add more code to the graphical app</a></h2>
-<ol>
-<li>
-<p>Declare a variable that will refer to a bubble object right after
-the variable referring to an ellipse object is declared in the
-instance variables section of the FirstApp class:</p>
-<pre><code class="language-java">private wheels.users.Ellipse _ellipse;
-private wheels.users.ConversationBubble _bubble;
-</code></pre>
-</li>
-<li>
-<p>After the line that creates a new ellipse object</p>
-<pre><code class="language-java">_ellipse = new wheels.users.Ellipse();
-</code></pre>
-<p>add a new line to create a new conversation bubble object to make
-the application a bit more exciting</p>
-<pre><code class="language-java">_bubble = new wheels.users.ConversationBubble(&quot;I am a red bubble&quot;);
-</code></pre>
-</li>
-<li>
-<p>Run the FirstApp application to see the result</p>
-</li>
-</ol>
-<h2 id="task-3-exploring-the-wheels-library"><a class="header" href="#task-3-exploring-the-wheels-library">Task 3: Exploring the Wheels library</a></h2>
-<ol>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithRectangle) that displays a
-rectangle inside a Frame using the wheels’ Rectangle class.</li>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithRoundedRectangle) that
-displays a rectangle with rounded corners using the Wheels’
-RoundedRectangle class.</li>
-<li>Write a version of FirstApp (inside the FirstWheelsApp project
-create new class, name it FirstAppWithLine) that displays a line
-using the Wheels Line class.</li>
-</ol>
+<h2 id="task-4-set-location"><a class="header" href="#task-4-set-location">Task 4: Set Location</a></h2>
+<p>Give your class a <code>setLocation</code> method. This should use relative
+positioning with each of the component shapes, just like we did with
+the worm.</p>
 <h2 id="review--submission"><a class="header" href="#review--submission">Review &amp; Submission</a></h2>
 <p>When you have completed the lab, please upload all Java source code and any
 other documents (such as diagrams or answers to questions) to
@@ -300,21 +243,21 @@ submitting the assignment.</p>
 receive feedback within a week of the deadline.</p>
 <p>Your submission must include:</p>
 <ul>
-<li><code>FirstApp.java</code></li>
-<li><code>FirstAppWithRectangle.java</code></li>
-<li><code>FirstAppWithRoundedRectangle.java</code></li>
-<li><code>FirstAppWithLine.java</code></li>
+<li><code>App.java</code></li>
+<li><code>DrawingPanel.java</code></li>
+<li><code>SmartShape.java</code></li>
+<li>The source code for your composite object from task 3</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../eclipse_intro/lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../sketch_app/lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../worm/lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../animation_timer/lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -324,11 +267,11 @@ receive feedback within a week of the deadline.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../eclipse_intro/lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../sketch_app/lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../worm/lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../animation_timer/lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
